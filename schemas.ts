@@ -823,8 +823,8 @@ export const GitLabContentSchema = z.union([
 export const FileOperationSchema = z.object({
   path: z.string(),
   content: z.string().optional(),
-  // hodyhq fork: per-file action + encoding so push_files can update/delete/move
-  // and carry binary files (base64). Defaults preserve upstream behaviour.
+  // Per-file action + encoding so push_files can update/delete/move and carry
+  // binary files (base64). Defaults preserve existing behaviour.
   action: z.enum(["create", "update", "delete", "move"]).optional(),
   encoding: z.enum(["text", "base64"]).optional(),
   previous_path: z.string().optional(),
