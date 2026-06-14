@@ -1,8 +1,8 @@
 {
-  "name": "@zereight/mcp-gitlab",
-  "version": "2.1.21",
+  "name": "@hodyhq/mcp-gitlab",
+  "version": "2.1.21-hodyhq.1",
   "mcpName": "io.github.zereight/gitlab-mcp",
-  "description": "GitLab MCP server for projects, merge requests, issues, pipelines, wiki, releases, and more",
+  "description": "GitLab MCP server (hodyhq fork of @zereight/mcp-gitlab) \u2014 adds binary (base64) file commits and per-file create/update/delete/move in push_files.",
   "keywords": [
     "gitlab",
     "gitlab-mcp",
@@ -23,7 +23,7 @@
     "streamable-http"
   ],
   "license": "MIT",
-  "author": "zereight",
+  "author": "Hody Moinzadeh (fork of zereight/gitlab-mcp)",
   "type": "module",
   "bin": {
     "mcp-gitlab": "build/index.js"
@@ -33,7 +33,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zereight/gitlab-mcp.git"
+    "url": "git+https://github.com/hodyhq/gitlab-mcp.git"
   },
   "publishConfig": {
     "access": "public"
@@ -99,5 +99,6 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.20.5",
     "typescript": "^5.8.2"
-  }
+  },
+  "forkOf": "@zereight/mcp-gitlab@2.1.21"
 }
